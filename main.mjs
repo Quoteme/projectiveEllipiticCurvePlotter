@@ -23,7 +23,6 @@ function init() {
 	let b = getUrlVars()["b"] ?? -1;
 	let c = getUrlVars()["c"] ?? 0;
 	mesh = meshifySolution(solve(a,b,c));
-	mesh.position.y = -50;
 	scene.add(mesh)
 
 	grid = new THREE.GridHelper(1000,100, 0xff00ff, 0x888888,);
